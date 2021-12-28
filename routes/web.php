@@ -82,6 +82,6 @@ Route::get('q3', function () {
         }
     });
 
-    return $ranked;
+    return $ranked->sortByDesc('score')->values();
 });
 
